@@ -1,0 +1,35 @@
+! name: Blockchain Programming
+! description: Rerank results to boost content related to the Blockchain programming language.
+! public: true
+! author: Dumbo
+! avatar: #000000
+
+! Remove results not matching any other rule
+$discard
+
+! Generic boosting
+*blockchain*$boost=1,site=rs
+*blockchain*$boost,site=github.com
+*blockchain*$boost,site=stackoverflow.com
+
+! Boost some results
+$boost=3,site=https://www.w3schools.com/
+$boost=3,site=https://www.w3schools.io/blockchain/solidity-tutorials/
+$boost=3,site=https://www.dappuniversity.com/
+$boost=3,site=https://docs.soliditylang.org/en/v0.8.17/
+$boost=3,site=https://www.freecodecamp.org/news/learn-solidity-blockchain-and-smart-contracts-in-a-free/
+$boost=3,site=https://www.coursera.org/learn/blockchain-basics
+$boost=3,site=https://eattheblocks.com/
+$boost=3,site=https://www.bitdegree.org/
+$boost=3,site=https://academy.101blockchains.com/courses/blockchain-crash-course
+$boost=3,site=http://pluralsight.pxf.io/c/1193463/424552/7490?u=https%3A%2F%2Fwww.pluralsight.com%2Fcourses%2Fblockchain-fundamentals
+$boost=3,site=https://click.linksynergy.com/deeplink?id=JVFxdTr9V80&mid=39197&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fethereum-development-course-blockchain-at-berkeley%2F
+$boost=3,site=https://www.awin1.com/cread.php?awinmid=6798&awinaffid=631878&clickref=&p=%5B%5Bhttps%3A%2F%2Fwww.edx.org%2Fcourse%2Fblockchain-technology
+$boost=3,site=https://click.linksynergy.com/fs-bin/click?id=JVFxdTr9V80&subid=0&offerid=323058.1&type=10&tmpid=14538&RD_PARM1=https%3A%2F%2Fwww.udemy.com%2Fintroduction-to-cryptocurrencies%2F
+$boost=3,site=https://www.udacity.com/course/blockchain-developer-nanodegree--nd1309
+$boost=3,site=https://www.simplilearn.com/learn-blockchain-basics-skillup
+$boost=3,site=https://learnblockchain.org/
+$boost=3,site=https://learnblockchain.academy/
+$boost=3,site=https://www.codementor.io/learn/blockchain
+$boost=3,site=https://medium.com/coinmonks/free-resources-to-get-a-blockchain-job-in-6-months-or-less-for-non-coders-5ddee72fbc7b
+$boost=3,site=https://blockgeeks.com/
